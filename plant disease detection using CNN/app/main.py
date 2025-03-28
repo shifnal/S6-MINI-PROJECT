@@ -11,12 +11,12 @@ from datetime import datetime
 import google.generativeai as genai
 
 # ------------------------- SUPABASE CONFIGURATION -------------------------
-SUPABASE_URL = "https://nnvjlzsmqzqmzyobqwfw.supabase.co"
-SUPABASE_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im5udmpsenNtcXpxbXp5b2Jxd2Z3Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3Mzk5Nzc3MDMsImV4cCI6MjA1NTU1MzcwM30.deqXBiufjAoFHeh69_FBkNhx6BDLBoyTcpg-4a72vM4"
+SUPABASE_URL = "SUPABASE URL"
+SUPABASE_KEY = "SUPABASE API KEY"
 supabase: Client = create_client(SUPABASE_URL, SUPABASE_KEY)
 
 # ------------------------- GOOGLE GENERATIVE AI CONFIGURATION -------------------------
-GOOGLE_API_KEY = "AIzaSyDB8tJYVuBW3pvxYBfJPrhjHRb3uqFhWo4"
+GOOGLE_API_KEY = "GEMINI API KEY"
 genai.configure(api_key=GOOGLE_API_KEY)
 
 # Initialize the generative model with a faster model
